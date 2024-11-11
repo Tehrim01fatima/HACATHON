@@ -1,0 +1,162 @@
+
+body{
+    background-color: rgb(252, 253, 255);
+    font-family: "poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: gradientBackground 5s ease infinite;
+    background: linear-gradient(#fa80d1,#8bc7ea);
+}
+
+h1{
+    color: rgb(10, 10, 10);
+    animation: fadeInText 3s ease-out;
+}
+
+form{
+    width: 50%;
+    height: 80vh;   
+    border: 1px solid black;
+    border-radius: 18px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    max-width: 650px;
+    height: auto;;
+    margin: auto;
+    padding: 22px;
+     background: linear-gradient(to left,#fa80d1,#8bc7ea); 
+    backdrop-filter: 120px;;
+    text-align: center;
+}
+
+
+
+label{
+    width: 100%;
+    text-align: start;
+    margin: 10px 0px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: large;
+}
+
+span{
+    color: rgb(79, 80, 6);
+}
+
+fieldset{
+    height: auto;
+    margin-bottom: 30px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    border: 2px solid black;
+}
+
+
+legend{
+    font-size: 23px;
+    color: rgb(247, 244, 108);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 7px;
+    background-color: black;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    border:2px solid rgb(0, 0, 0) ;
+}
+
+button{
+    width: 220px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 25px;
+    color: rgb(6, 7, 6);
+    background-color: rgb(71, 116, 199);
+    border:2px solid rgb(6, 65, 73) ;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+button:hover{
+    background-color: rgba(161, 113, 113, 0.822);
+    color: rgb(15, 14, 14);
+    border:2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+#Output{
+    width: 50%;
+    max-height: 2000px;
+    color: rgb(17, 15, 15);
+    text-align: start;
+    margin-top: 50px;
+    border: 3px sloid black ;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-shadow: 0px 0px 9px ;
+    padding: 20px;
+    background: linear-gradient(to left,#fa80d1,#8bc7ea);
+    object-fit: cover;
+    font-weight: 500;
+
+    h1{
+        text-align: center;
+        color: dodgerblue;
+    }
+    h2{
+        color: black;
+    }
+    p{
+        margin-left: 20px;
+    }
+}
+
+#profilePic{
+    background-color: white;
+}
+
+.picBox{
+    width: 160px ;
+    height: 160px ;
+    border: 2px solid rgb(0, 0, 0);
+   
+    box-shadow: 2px 3px 25px rgb(0, 0, 0);
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    cursor: pointer;
+}
+@keyframes gradientBackground {
+    0% {
+        background: linear-gradient(135deg, #8bc7ea, #feb47b);
+    }
+    50% {
+        background: linear-gradient(135deg, #d6fda2, #ffaa71);
+    }
+    100% {
+        background: linear-gradient(135deg, #fa80d1, #fc8f3b);
+    }
+}
+
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
